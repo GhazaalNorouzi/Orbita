@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Orbita - جستجوی سیارات</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/planet.css" />
+  </head>
+  <body class="container-fluid">
+    <header>
+       <header id="" class="">
+      <nav class="navbar navbar-expand-md text-primary bg-dark">
+        <div class="container">
+          <a href="#" class="navbar-brand">Orbita</a>
+          <button
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            class="navbar-toggler"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a href="#" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="#about" class="nav-link">Planets</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Asteroids</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="search-box p-4">
+          <h2>🔎 جستجوی سیارات</h2>
+          <form class="d-flex align-items-center justify-content-center w-75 p-3" role="search">
+            <input
+            class="form-control me-2 w-50"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+           />
+            <button class="btn btn-primary" type="submit">Search</button>
+           </form>
+      </div>
+      <div id="planetResult" class="p-4">
+             <div id="planetInfo" class="mb-4">
+                   <!-- عنوان و توضیح سیاره اینجا میاد -->
+             </div>
+
+             <h3 class="mb-3">گالری تصاویر</h3>
+              <div id="planetGallery" class="row g-4">
+                   <!-- کارت‌های تصاویر اینجا ساخته میشن -->
+              </div>
+      </div>
+
+    
+    </main>
+     <!-- footer -->
+    <footer class="py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2">Features</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2">FAQs</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2">About</a>
+        </li>
+      </ul>
+      <p class="text-center copy-right-text">© 2025 Company, Inc</p>
+    </footer>
+    <!--  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="js/search.js"></script>
+  </body>
+</html> 

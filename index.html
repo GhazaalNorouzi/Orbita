@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Orbita - خانه</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style2.css" />
+  </head>
+  <body class="container-fluid">
+    <header id="headerOfHome" class="">
+      <nav class="navbar navbar-expand-md text-primary">
+        <div class="container">
+          <a href="#" class="navbar-brand">Orbita</a>
+          <button
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            class="navbar-toggler"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a href="#" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="planets.html" class="nav-link">Planets</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- -- -->
+      <div class="header__text-box">
+        <h1 class="heading-primary">
+          <span class="heading-primary--main">NASA Explorer</span>
+          <span class="heading-primary--sub"
+            >Discover the universe with real NASA data</span
+          >
+        </h1>
+        <!-- <a href="#" class="btn btn--white btn--animated">Discover our tours</a> -->
+        <form class="d-flex" role="search">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-primary" type="submit">Search</button>
+        </form>
+      </div>
+    </header>
+    <main>
+      <section id="apod-gallery" class="container my-5 py-5">
+        <h2 class="text-center mb-4 heading-secondry">Latest NASA images</h2>
+        <div id="apodContainer" class="row g-4 justify-content-center"></div>
+      </section>
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="apodModal"
+        tabindex="-1"
+        aria-labelledby="apodModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="apodModalLabel">عنوان تصویر</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="بستن"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <img
+                id="modalImage"
+                src=""
+                alt=""
+                class="img-fluid mb-3 rounded"
+              />
+              <p id="modalDescription"></p>
+              <p><small id="modalDate" class="text-muted"></small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+    </main>
+    <!-- footer -->
+    <footer class="py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2">Features</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2">FAQs</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2">About</a>
+        </li>
+      </ul>
+      <p class="text-center copy-right-text">© 2025 Company, Inc</p>
+    </footer>
+
+    <!-- -------------------------------------- -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/apod.js"></script>
+  </body>
+</html>
